@@ -1,13 +1,137 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Our School ERP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let category of categories">
+        <ion-card class="category-card">
+          <ion-card-content class="text-center">
+            <ion-icon [name]="category.icon" size="large"></ion-icon>
+            <p>{{ category.label }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content> -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<div class="mobileScreen">
+  <div class="header">
+    <div class="col-md-12">
+        <div class="logo">
+            <img src="../../assets/images/logo.jpg" style="width:45px;">
+        </div>
+        <div class="loins">
+          <div class="navigation">
+            <div class="user-box">
+              <div class="image-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png" alt="avatar">
+              </div>
+              <p class="username">D Poojitha</p>
+            </div>
+            <div class="menu-toggle"></div>
+            <ul class="menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Messages</a></li>
+              <li><a href="#">Notification</a></li>
+              <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+</div>
+  
+  <section class="platters">
+    <div class="titleBar">
+      <h1>chaitanya bharathi School</h1>
+    </div>
+    <div class="platterBox">
+      <div class="platterHeader">
+        <div class="titleContainer">
+          <div class="iconContainer">
+            <img src="https://t3.ftcdn.net/jpg/03/39/60/22/360_F_339602256_dBq6bYfHWzlnRQkXgAMFXZfx2r1DPQns.jpg" alt="">
+          </div>
+          <div class="textContent">
+            <span class="title">D Parthi Sai Raju</span>
+            <span class="shortDescription">
+             ELITE - Olympasid
+            </span>
+          </div>
+        </div>
+        <i data-feather="heart" class="added"></i>
+      </div>
+      <div class="platterBody">
+        <div class="platterInfoBox">
+          <span class="label">Admission Number</span>
+          <span class="value">12345678</span>
+        </div>
+        <div class="platterInfoBox">
+          <span class="label">Roll Number</span>
+          <span class="value">123456</span>
+        </div>
+        <div class="platterInfoBox">
+          <span class="label">Class</span>
+          <span class="value">8 Stands</span>
+        </div>
+        <div class="platterInfoBox">
+          <span class="label">Section</span>
+          <span class="value">B</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 student-profile">
+      <div class="card shadow-sm">
+        <div class="mb-3 bg-transparent border-0">
+          <h3 class="mb-0">General Information</h3>
+        </div>
+        <div class="pt-0">
+          <table class="table table-bordered">
+            <tr>
+              <th width="45%">Roll</th>
+              <td width="2%">:</td>
+              <td>125</td>
+            </tr>
+            <tr>
+              <th width="45%">Academic Year	</th>
+              <td width="2%">:</td>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th width="45%">Gender</th>
+              <td width="2%">:</td>
+              <td>Male</td>
+            </tr>
+            <tr>
+              <th width="45%">Religion</th>
+              <td width="2%">:</td>
+              <td>Group</td>
+            </tr>
+            <tr>
+              <th width="45%">blood</th>
+              <td width="2%">:</td>
+              <td>B+</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+ 
+
+  
+</div>
+<script>
+  let menuToggle = document.querySelector('.menu-toggle');
+let navigation = document.querySelector('.navigation');
+
+menuToggle.onclick = function() {
+  navigation.classList.toggle('active');
+}
+</script>
